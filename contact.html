@@ -1,0 +1,73 @@
+<! DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title>Contact
+</title>
+<link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <header>
+        <h1> Shahzad Rahman for Switchfully </h1>
+        <nav>
+        <ul>
+            <li class="menu-home"><a href="index.html">Home</a></li>
+            <li class="menu-history"><a href="history.html">A bit of history...</a></li>
+            <li class="menu-contact"><a href="contact.html">Contact</a></li>
+        </ul>
+        </nav>
+        </header>
+       
+        <div id="formcontact">
+        <form method="POST" action="envoi.html">
+        <fieldset>
+            <legend>Contact me !</legend>
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name">
+        </br>
+        </br>
+            <label for="fname">First Name :</label>
+            <input type="text" id="fname" required>
+        </br>
+        </br>
+            <label for="anniv">Date of Birth :</label>
+            <input type="date" name="naissance" id="anniv">
+        </br>
+        </br>
+            You are : 
+            <label for="homme">A man</label>
+            <input type="radio" id="homme" name="sexe" value="Homme">
+            <label for="femme">A woman</label>
+            <input type="radio" id="femme" name="sexe" value="Femme">
+            <label for="unspec">Not specified</label>
+            <input type="radio" id="unspec" name="sexe" value="unspec">
+        </br>
+        </br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="mail">
+        </br>
+        </br>
+            <label for="gsm">Phone :</label>
+            <input type="tel" id="tel" name="gsm" placeholder="+32/455.55.55.55" pattern="+[0-9]{2}/[0-9]{3}.[0-9]{2}.[0-9]{2}.[0-9]{2}">
+        </br>
+        </br>
+            Country : </br>
+            <select name="pays" >
+                <option value="belgique">Belgium</option>
+                <option value="france">France</option>
+                <option value="nl">Netherlands</option>
+                <option value="lux">Luxembourg</option>
+                <option value="suisse">Switzerland</option>
+            </select>
+        </br>
+        </br>
+            <textarea name="message" id="" cols="50" rows="5" placeholder="Your message : "></textarea>
+            <br>
+            <input type="submit" value="Send" >
+            <input type="reset" value="Reset">
+        </fieldset>
+        </form>
+        </div>
+<footer>Shahzad Rahman - 2021</footer>    
+</body>
+</html>
